@@ -1,0 +1,289 @@
+:root{
+    --text-color:#0F0F0F;
+    --background-color:#12365cb0;
+    --bright-color:#eee;
+    --line-color :#dfdfdf;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 100%;
+}
+html,body,ul,li,img,h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.125em;
+}
+h2{
+    font-weight: 700;
+}
+h3,ul,li,.products_name,h4{
+    font-weight: 400;
+}
+p,.footer_wrap,h5{
+    font-weight: 300;
+}
+.wrap,.footer_wrap,section>div{
+    width: 62.5%;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+header{
+    background-color: var(--background-color);
+    z-index: 999;
+    position: relative;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.9);
+}
+header>.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    padding:1.25em 0;
+}
+header img{
+    height: 32px;
+}
+nav li{
+    padding: 0 1em;
+}
+nav li a{
+    color: var(--bright-color);
+}
+.main_menu{
+    display: flex;
+}
+/* 메인 */
+
+.slide{
+    background-image: url(../img/주차장2\(흑\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: -77px;
+    position: relative;
+}
+.slide::before{
+    content: "";
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+.slide_wrap,h2{ 
+    color: var(--bright-color);
+}
+.slide_wrap{
+    text-align: center;
+    padding: 17.188em 0;
+    position: relative;
+}
+h2{
+    font-size: 7.5rem;
+    letter-spacing: 0.5rem;
+}
+.slide_con{
+    font-size: 3.125rem;
+    letter-spacing: 0.3rem;
+}
+.slide_sub_con{
+    font-size: 2rem;
+    padding-top: 3em;
+}
+.about{
+    position: relative;
+}
+.about_wrap{
+    display: flex;
+    margin: 2em auto;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.about_con{
+    margin-left: 5.625em;
+}
+.about_con p{
+    line-height: 2;
+    border-left: 1px solid var(--line-color);
+    padding: 0 2.625em;
+    margin: 2.625em 0;
+}
+.about_img{
+    display: grid;
+}
+.about_img>img:nth-of-type(1){
+    width: 300px;
+    margin: 0px 0px 1em 5em;
+}
+.about_img>img:nth-of-type(2){
+    width: 400px;
+}
+.bridge{
+    background-image: url(../img/주차장3\(흑\).jpg);
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+.bridge_wrap{
+    text-align: right;
+    font-weight: 700;
+    font-size: 4em;
+    color: var(--bright-color);
+}
+.business{
+    height: 100vh;
+}
+.business_wrap{
+    text-align: center;
+    padding: 6em 0;
+}
+.business_line{
+    border-left: 1px solid var(--line-color);
+    height: 45px;
+    position: relative;
+    left: 50%;
+}
+.business_wrap h3{
+    padding: 0.5em;
+}
+.business_wrap h4{
+    font-size: 1.5rem;
+    padding: 1em;
+}
+.business_wrap p{
+    padding: 0em 0 3em;
+}
+.business_img{
+    padding: 3em 0;
+}
+.expect{
+    padding: 4em;
+    margin-bottom: 11em;
+}
+.expect_wrap{
+    margin: 2em auto;
+    text-align: center;
+}
+.expect h3{
+    padding: 2em;
+}
+.expect_con_wrap{
+    display: flex;
+    justify-content: center;
+}
+.expect_con{
+    border: 1px solid var(--line-color);
+    padding: 2em 1em;
+    border-radius: 1rem;
+    margin: 2em;
+    box-shadow: 0.1em 0.1em 0.3em #ccc;
+}
+.products_wrap{
+    padding-bottom: 11em;
+}
+.products_con_wrap>div{
+    display: flex;
+    text-align: center;
+}
+.products h3{
+    text-align: center;
+}
+.products_con{
+    border: 1px solid var(--line-color);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin: 2em;
+    box-shadow: 0.1em 0.1em 0.3em #ccc;
+}
+.products_con_wrap>div{
+    justify-content: center;
+}
+.products_con>div{
+    padding: 1em;
+}
+.products_con>img{
+    padding: 1em;
+    width: 300px;
+}
+.products_img::before{    
+    content: "";
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.products_con:hover{
+    z-index: 999;
+    background: #000;
+    opacity: 0.5;
+
+
+}
+.ask{
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-image: url(../img/주차장3\(흑\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    
+}
+
+.ask button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 75px;
+    background:var(--background-color);
+    border:none;
+    color: var(--bright-color);
+}
+footer{
+    background: #0d3055;
+}
+.footer_wrap{
+    padding: 1.5em 0;
+}
+.footer_con_wrap{
+    display: flex;
+}
+.footer_wrap>h5, .footer_wrap>div,.footer_title{
+    padding: 1em 0;
+    color: var(--bright-color);
+}
+.footer_con:nth-of-type(2){
+    padding: 0 3em;
+}
