@@ -1,0 +1,203 @@
+:root{
+    --text-color:#0F0F0F;
+    --background-color:#12365c;
+    --bright-color:#eee;
+    --line-color :#dfdfdf;
+    --background-liquid-color:#12365c62;
+    --dark-liquid-color: #0f0f0f7e;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 100%;
+}
+html,body,ul,li,img,h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.125em;
+}
+h2{
+    font-weight: 700;
+}
+h3,ul,li,.products_name,h4{
+    font-weight: 400;
+}
+p,.footer_wrap,h5{
+    font-weight: 300;
+}
+.container{
+    width: 100%;
+}
+
+/* 헤더 */
+header{
+    z-index: 999;
+    position: relative;
+    
+}
+h1 a>img{
+    width: 130px;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-liquid-color);
+    padding: 1em 5em;
+}
+.main_menu{
+    display: flex;
+}
+.menu{
+    padding: 0 1em;
+    line-height: 2;
+    transition: 0.1s;
+}
+.menu a{
+    color: var(--bright-color);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.menu:hover{
+    background-color: #f7f7f7b9;
+    border-radius: 0.5rem;
+}
+.menu:hover a{
+    color: var(--background-color);
+}
+
+.fas.fa-bars{
+    display: none;
+}
+.fas.fa-bars:hover{
+    color: var(--background-color);
+}
+/* 메인 */
+section{
+    width: 62.5%;
+    margin: 0 auto;
+}
+.main .slide{
+    background-image: url(../img/주차장2\(흑\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -4.250em;
+    background-attachment: fixed;
+}
+h2{
+    color:var(--bright-color);
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+}
+.slide_wrap{
+    text-align: center;
+    color: var(--bright-color);
+    padding: 19.45em 0;
+    z-index: 99;
+    position: relative;
+}
+.slide_con{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+.slide_sub_con{
+    font-size: 1.5rem;
+    padding: 1em 0;
+}
+.bg_cover{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.about{
+    height: 100vh;
+}
+.about_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7em 0;
+}
+.about_img{
+    display: flex;
+    flex-direction: column;
+}
+.about_img img:nth-of-type(1){
+    width: 310px;
+    margin: 1em 0 1em 4em;
+}
+.about_img img:nth-of-type(2){
+    width: 410px;
+}
+.about h3{
+    padding-bottom: 1em;
+}
+
+
+@media(max-width:860px){
+
+    section{
+        width: 90%;
+    }
+    .wrap{
+        padding: 0.9em 2em;
+    }
+    nav{
+        margin-left: -3em;
+    }
+    .main_menu{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main_menu.on{
+        display: block;
+    }
+    .menu{
+        padding: 0.2em 1em;
+    }
+
+    .fas.fa-bars{
+        display: block; color: var(--bright-color);
+        text-align: center;
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+    .fas.fa-bars:hover{
+        cursor: pointer;
+    }
+    .slide.on{
+        margin-top: -14.25em;
+    }
+    .slide_wrap{
+        padding: 18.6em 0;
+        flex-direction: column;
+    }
+    .about p br{
+        display: none;
+    }
+    .about_img img:nth-of-type(1){
+        display: none;
+    }
+ 
+  
+}
+
